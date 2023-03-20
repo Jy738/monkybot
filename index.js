@@ -72,6 +72,7 @@ client.on('message', message => {
     message.channel.send(replaceGlobal(explanation) + ping);
   }
   if(ifIncludes(angrymsg) && sender !== botid){
+    message.react('😡');
     message.channel.send(replaceGlobal(angry) + ping);
   }
   if(ifIncludes(agreeing) && sender !== botid){
