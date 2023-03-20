@@ -80,7 +80,7 @@ client.on('message', message => {
   if(ifIncludes(ask) && sender !== botid){
     message.channel.send(random(answer) + ping);
   }
-  if(message.content.includes('<@' + botid + '>'){
+  if(message.content.includes('<@' + botid + '>')){
      message.channel.send(replaceGlobal(convo) + ping);
   }
 });
